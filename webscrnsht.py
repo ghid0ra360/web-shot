@@ -77,14 +77,14 @@ def web_shot():
                 op_sc()
         op_sc()
         def options_a():
-            print("\n(A) Go back to c-tool \n(B) Exit")
+            print("\n(A) Restart \n(B) Exit")
             o = input("\nPlease choose any of the following options: ")
 
             if re.match("^[Aa]*$", o):
                 sleep(2)
-                print("Entering C-tool")
+                print("Restarting")
                 sleep(2)
-                ctool()
+                web_shot()
             elif re.match("^[bB]*$", o):
                 print("Exiting the tool..")
                 sleep(2)
@@ -97,7 +97,6 @@ def web_shot():
 
     except Exception as ex:
         print(ex , '\n' "Please try again\nProgram Restarting...\n")
-
         sleep(3)
 
 
