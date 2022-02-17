@@ -98,9 +98,6 @@ def web_shot():
     except Exception as ex:
         print(ex , '\n' "Please try again\nProgram Restarting...\n")
         sleep(3)
-
-
-
-
+        web_shot()
 
 web_shot()
